@@ -16,18 +16,18 @@ public class Calculatrice {
     }
 
     public String soustraction() {
-        float operation = this.num1 - this.num2;
-        return this.num1 + " - " + this.num2 + " = " + operation;
+        float operation = this.num1 - this.num2 / this.num3;
+        return this.num1 + " - " + this.num2 + " / " + this.num3 + " = " + operation;
     }
 
     public String multiplication() {
-        float operation = this.num1 * this.num2;
-        return this.num1 + " * " + this.num2 + " = " + operation;
+        float operation = this.num1 * this.num2 + this.num3;
+        return this.num1 + " * " + this.num2 + " + " + this.num3 + " = " + operation;
     }
 
     public String division() {
-        float operation = this.num1 / this.num2;
-        return this.num1 + " / " + this.num2 + " = " + operation;
+        float operation = this.num1 / this.num2 - this.num3;
+        return this.num1 + " / " + this.num2 + " - " + this.num3 + " = " + operation;
     }
 
 
