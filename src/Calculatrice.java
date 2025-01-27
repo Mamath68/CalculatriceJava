@@ -12,23 +12,81 @@ public class Calculatrice {
     }
 
     public String addition() {
+        float operation = this.num1 + this.num2;
+        return this.num1 + " + " + this.num2 + " = " + operation;
+    }
+
+    public String additionEtSoustraction() {
+        float operation = this.num1 + this.num2 - this.num3;
+        return this.num1 + " + " + this.num2 + " - " + this.num3 + " = " + operation;
+    }
+
+    public String additionEtDivision() {
+        float operation = this.num1 + (this.num2 / this.num3);
+        return this.num1 + " + (" + this.num2 + " / " + this.num3 + ") = " + operation;
+    }
+
+    public String additionEtMultiplication() {
         float operation = this.num1 + (this.num2 * this.num3);
         return this.num1 + " + (" + this.num2 + " * " + this.num3 + ") = " + operation;
     }
 
     public String soustraction() {
+        float operation = this.num1 - this.num2;
+        return this.num1 + " - " + this.num2 + " = " + operation;
+    }
+
+    public String soustractionEtAddition() {
+        float operation = this.num1 - this.num2 +  this.num3;
+        return this.num1 + " - " + this.num2 + " + " + this.num3 + " = " + operation;
+    }
+    public String soustractionEtDivision() {
         float operation = this.num1 - (this.num2 / this.num3);
         return this.num1 + " - (" + this.num2 + " / " + this.num3 + ") = " + operation;
     }
+    public String soustractionEtMultiplication() {
+        float operation = this.num1 - (this.num2 * this.num3);
+        return this.num1 + " - (" + this.num2 + " * " + this.num3 + ") = " + operation;
+    }
 
     public String multiplication() {
+        float operation = this.num1 * this.num2;
+        return this.num1 + " * " + this.num2 + " = " + operation;
+    }
+
+    public String multiplicationEtAddition() {
         float operation = (this.num1 * this.num2) + this.num3;
         return "(" + this.num1 + " * " + this.num2 + ") + " + this.num3 + " = " + operation;
     }
 
+    public String multiplicationEtSoustraction() {
+        float operation = (this.num1 * this.num2) - this.num3;
+        return "(" + this.num1 + " * " + this.num2 + ") - " + this.num3 + " = " + operation;
+    }
+
+    public String multiplicationEtDivision() {
+        float operation = (this.num1 * this.num2) / this.num3;
+        return "(" + this.num1 + " * " + this.num2 + ") / " + this.num3 + " = " + operation;
+    }
+
     public String division() {
+        float operation = this.num1 / this.num2;
+        return this.num1 + " / " + this.num2 + " = " + operation;
+    }
+
+    public String divisionEtAddition() {
+        float operation = (this.num1 / this.num2) + this.num3;
+        return "(" + this.num1 + " / " + this.num2 + ") + " + this.num3 + " = " + operation;
+    }
+
+    public String divisionEtSoustraction() {
         float operation = (this.num1 / this.num2) - this.num3;
         return "(" + this.num1 + " / " + this.num2 + ") - " + this.num3 + " = " + operation;
+    }
+
+    public String divisionEtMultiplication() {
+        float operation = (this.num1 / this.num2) * this.num3;
+        return "(" + this.num1 + " / " + this.num2 + ") * " + this.num3 + " = " + operation;
     }
 
 }
